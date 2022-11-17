@@ -1,31 +1,22 @@
-/* navigation bar */
-
+    /* navigation bar */
 .navigation{
-    top: 0px;
-   width: 300px;
-   height: 650px;
-   font-weight: bold;
-   background-color: #f44336;
-   color: #fff !important;
-   position: fixed;
-   text-align: left;
+    top:0px;
+    width: 300px;
+    height: 1000px; 
+    display: block;
+    font-weight: bold;
+    background-color: #f44336 !important;
+    overflow:auto;
 }
-.navigation h1{
-    margin-top: 50px;
+.company{
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
 }
-.navi li a{
-    text-decoration: none;
+.company h1{
+    margin: 10px 0px;
 }
-.navi li{
-    list-style: none;
-    padding: 8px 16px !important;
+.navi{
 }
-.manu{
-    margin-top: 50px;
-    font-size:18px !important;
+.navi li:hover{
+    background-color: #ffff !important;
 }
-.manu li a:hover{
-    color: #000;
-    background-color: #fff;
-}
-    /* navigation bar over */
