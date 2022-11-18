@@ -1,10 +1,22 @@
+html body{
+   line-height: 1.5 !important;
+   font-size: 16px;
+
+}
 .table {
   margin-left: 350px;
   margin-right: 40px;
 }
-
+/*-------img bar------*/
+.img{
+  padding: 0px 8px !important;
+}
 .col1_img img {
   width: 100%;
+  margin-bottom: -33px;
+   margin-top: 16px;
+   opacity: 0.8;
+   cursor: pointer;
 }
 
 .col1_img img:nth-child(2) {
@@ -15,29 +27,82 @@
 }
 .col2_img img {
   width: 100%;
-}
+} 
+/*------img bar over----*/
 
-/* navigation bar */
+   /* navigation bar */
 .navigation {
   top: 0px;
   width: 300px;
   height: 100%;
   display: block;
   font-weight: bold;
+  color: #ffff !important;
   background-color: #f44336 !important;
   overflow: auto;
   position: fixed;
+  padding: 8px 16px 8px 16px !important;
+  font-size: 18px !important;
+  text-align: left;
 }
+
 
 .company {
   padding-top: 64px !important;
   padding-bottom: 64px !important;
+  margin: 10px 0px 10px 0px !important;
+} 
+.navi{
+  list-style-type: none;
 }
-.company h1 {
-  margin: 10px 0px;
+.navi li a{
+  text-decoration: none;
 }
-.navi {
+.navi li a:link{
+  color:#ffff;
 }
-.navi li:hover {
-  background-color: #ffff !important;
+
+.navi li a:hover {
+  color: #000;
+   background-color: #ffff !important;
+} 
+ /* navigation bar over*/
+   /*------ header-----*/
+.main{
+  margin-top: 80px !important;
+  padding: 0px 16px 0px 16px !important;
+}              
+.main h1{
+    font-size: 64px !important;
+    font-weight: bolder;
+}       
+.main1{
+  color: #f44336 !important;
+  font-size: 48px !important;
+}
+.hr{
+  width: 50px;
+  border: 5px solid red !important;
+  border-radius: 4px;
+  margin: 20px 0px;
+  box-sizing: content-box;
+   height: 0;
+   overflow: visible;
+}
+    /*  ----- founder-----*/
+.founder{
+  filter:grayscale(75%);
+  padding: 0px 8px;
+}
+.col3_img img{
+  width: 100%;
+}
+.col3_img{
+  background-color: #f1f1f1 !important;
+}
+.ceo{
+  padding: 0px 16px !important;
+}
+.ceo1{
+  opacity: 0.60 !important;
 }
