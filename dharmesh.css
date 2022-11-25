@@ -1,0 +1,333 @@
+body {
+  font-family: poppins;
+  margin: 0;
+}
+
+/* ---------------------------------- */
+/* **********NAVBAR CSS START *********/
+/* ---------------------------------- */
+.navbar {
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  font-weight: bold;
+  color: #ffff !important;
+  background-color: #f44336 !important;
+  overflow: auto;
+  position: fixed;
+  padding: 8px 16px 8px 16px !important;
+  font-size: 18px !important;
+  text-align: left;
+}
+
+.company_title {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 16px;
+}
+.company_title {
+  font-size: 24px;
+}
+
+.nav_menu {
+  list-style-type: none;
+  padding: 0px;
+}
+.nav_menu li {
+  padding: 8px 16px 8px 16px !important;
+  color: #fff;
+}
+.nav_menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav_menu li:hover {
+  background-color: #ffff !important;
+  color: #000 !important;
+}
+
+/* ---------------------------------- */
+/* **********NAVBAR CSS END ***********/
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* **********HEADER CSS END ***********/
+/* ---------------------------------- */
+.header {
+  color: #fff;
+  background-color: #f44336;
+  padding: 8px 16px;
+  font-size: 24px;
+  width: 100%;
+  position: fixed !important;
+  z-index: 1 !important;
+}
+/* ---------------------------------- */
+/* **********HEADER CSS END ***********/
+/* ---------------------------------- */
+
+.table {
+  margin-left: 350px;
+  margin-right: 40px;
+}
+
+/* ----------------------------*/
+/* --- MAIN TITLE CSS START ---*/
+/* ----------------------------*/
+.title {
+  padding: 80px 16px 0px 8px;
+}
+
+/* આનું કહવાનું છે  */
+.title h1 {
+  font-size: 64px !important;
+  font-weight: bolder;
+  margin: 0px;
+}
+.title h2 {
+  color: #f44336 !important;
+  font-size: 48px !important;
+  margin: 0px;
+}
+
+.title hr {
+  width: 50px;
+  border: 5px solid red !important;
+  border-radius: 4px;
+  margin: 20px 0px;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+/* ----------------------------*/
+/* --- MAIN TITLE CSS END -----*/
+/* ----------------------------*/
+
+/* ===================================================== */
+
+/* ************************** */
+/*----   IMAGE CSS START -----*/
+/* ************************** */
+.img {
+  padding: 0px 8px !important;
+}
+
+.col1_img img {
+  width: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.col1_img img:nth-child(2) {
+  height: 20% !important;
+}
+.col2_img img:nth-child(2) {
+  height: 20% !important;
+}
+.col2_img img {
+  width: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* ************************** */
+/*----   IMAGE CSS END -------*/
+/* ****************************/
+
+/* =================================================== */
+
+/* ---------------------------- */
+/*  ----- FOUNDER CSS START-----*/
+/* ---------------------------- */
+.founder {
+  filter: grayscale(75%);
+  padding: 0px 8px;
+}
+.col3_img img {
+  width: 100%;
+}
+.col3_img {
+  background-color: #f1f1f1 !important;
+}
+.ceo {
+  padding: 0px 16px !important;
+}
+.ceo1 {
+  opacity: 0.6 !important;
+}
+/* ---------------------------- */
+/*  ----- FOUNDER CSS END-----*/
+/* ---------------------------- */
+
+/* ============================================================== */
+
+/* ****************************** */
+/*-----PACKEGE TABLE CSS START--------*/
+/* ****************************** */
+.basic_table,
+.pro_table {
+  padding: 0px 8px;
+  margin-bottom: 16px;
+  /* આય width સતટિક આપી તી   */
+}
+
+/* આનું  કહેવાનું છે  */
+.basic_table ul,
+.pro_table ul {
+  background-color: #f1f1f1 !important;
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.basic_table ul li,
+.pro_table ul li {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.basic_table ul li:first-child {
+  background-color: #616161;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  font-size: 24px !important;
+}
+
+.pro_table ul li:first-child {
+  color: #fff;
+  background-color: #f44336;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  font-size: 24px !important;
+}
+
+.basic_table ul li p,
+.pro_table ul li p {
+  opacity: 0.6;
+}
+
+.basic_table ul li button {
+  border: none;
+  padding: 12px 24px;
+  font-size: inherit;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.basic_table ul li button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.pro_table ul li button {
+  border: none;
+  padding: 12px 24px;
+  font-size: inherit;
+  cursor: pointer;
+  background-color: #f44336;
+}
+.pro_table ul li button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ****************************** */
+/*-----PACKEGE TABLE CSS END--------*/
+/* ****************************** */
+
+/* ------------------------------ 
+------ CONTACT CSS START -------
+------------------------------ */
+.section {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  display: block;
+  width: 100%;
+}
+.send {
+  color: #ffff;
+  background-color: #f44336;
+  padding: 12px 24px;
+  margin-bottom: 16px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.send:hover {
+  color: #000;
+  background-color: #c5c5c5;
+}
+/* ------------------------------ */
+/*------ CONTACT CSS END -------*/
+/* ------------------------------ */
+
+/* ---------------------------- */
+/* -------FOOETR CSS START----- */
+/* ---------------------------- */
+.footer {
+  margin-top: 75px;
+  padding: 32px 58px 32px 16px;
+  background-color: #f1f1f1 !important;
+}
+.footer p {
+  text-align: end;
+}
+
+.footer a:hover {
+  color: #000;
+  opacity: 0.6;
+}
+/* ---------------------------- */
+/* -------FOOETR CSS END----- */
+/* ---------------------------- */
+
+/* ==================================================================== */
+
+/* ================================*/
+/* ========               =========*/
+/*--------| MEDIA QUERY |----------*/
+/* ========               =========*/
+/* ================================*/
+
+/* -----------------      HEADER    --------------------- */
+
+@media only screen and (min-width: 992px) {
+  .header {
+    display: none;
+  }
+}
+
+/* -----------------      NAVBAR    --------------------- */
+@media only screen and (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+
+  .table {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+/*----------------   IMAGE START ---------------*/
+
+@media only screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/*----------------   FOUNDER START ---------------*/
+@media only screen and (max-width: 600px) {
+  .card_row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
