@@ -32,7 +32,7 @@ html body {
 }
 
 .menu_icon {
-  adding: 8px 16px;
+  padding: 8px 16px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
@@ -138,7 +138,6 @@ html body {
   overflow: visible;
 }
 /*  ----- founder-----*/
-
 .founder {
   filter: grayscale(75%);
   padding: 0px 8px;
@@ -155,10 +154,7 @@ html body {
 .ceo1 {
   opacity: 0.6 !important;
 }
-@media only screen and (min-width: 600px) {
-  .col3_img{width: 100%;}
-}
-/*----- founder over-------*/
+/*----- founder -------*/
 /*-------packeges table------*/
 .table1 {
   padding: 0px 8px;
@@ -181,7 +177,7 @@ html body {
   background-color: #616161;
   padding-top: 32px !important;
   padding-bottom: 32px !important;
-  color: #ffff;
+
   font-size: 24px !important;
 }
 .room {
@@ -216,7 +212,6 @@ html body {
   padding-bottom: 32px !important;
   font-size: 24px !important;
 }
-/*-------packeges table over ------*/
 
 @media only screen and (min-width: 600px) {
   .row {
@@ -224,7 +219,6 @@ html body {
     flex-direction: row !important;
   }
 }
-/* -----contact-----*/
 .section{
   margin-top: 16px;
   margin-bottom: 16px;
@@ -255,11 +249,11 @@ html body {
   margin-top: 75px;
   padding: 32px 58px 32px 16px;
   background-color: #f1f1f1 !important;
-
 }
-.last1{
+.last p{
   float: right;
 }
+
 .last1 a:hover{
   color: #000;
   opacity: 0.60;
