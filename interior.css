@@ -174,6 +174,7 @@ html body {
   border-bottom: 1px solid #ddd;
 }
 .table1_main {
+  color: #fff;
   background-color: #616161;
   padding-top: 32px !important;
   padding-bottom: 32px !important;
@@ -219,6 +220,7 @@ html body {
     flex-direction: row !important;
   }
 }
+/* -------contact-------*/
 .section{
   margin-top: 16px;
   margin-bottom: 16px;
@@ -241,7 +243,7 @@ html body {
 }
 .send:hover{
   color: #000;
-  background-color: #c5c5c5;
+  background-color: #cfcfcf;
 }
 /* -------contact over-----*/
 /*-------last-------*/
