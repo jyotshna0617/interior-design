@@ -65,13 +65,22 @@ body {
   display: inline-block;
 }
 .menu_icon{
-  color: #fff;
-  text-decoration: none;
+ color: #fff;
+   text-decoration: none;
   padding: 8px 16px;
   margin-right: 16px;
   
 }
 .menu_icon:hover{
+  color: #000;
+  background-color: #cccccc;
+}
+.close_menu{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px; 
+}
+.close_menu:hover{
   color: #000;
   background-color: #cccccc;
 }
@@ -326,6 +335,10 @@ body {
   
 }
 
+@media only screen and (max-width: 600px){
+  
+}
+
 /* -----------------      NAVBAR    --------------------- */
 @media only screen and (max-width: 992px) {
   .navbar {
@@ -339,10 +352,12 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  .colse_menu{
+
+ .close_menu {
     display: none;
   }
 }
+
 /*----------------   IMAGE START ---------------*/
 
 @media only screen and (max-width: 600px) {

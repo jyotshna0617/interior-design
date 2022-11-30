@@ -1,9 +1,59 @@
-html body {
-  line-height: 1.5 !important;
-  font-size: 16px;
+body {
   font-family: poppins;
+  margin: 0;
 }
 
+/* ---------------------------------- */
+/* **********NAVBAR CSS START *********/
+/* ---------------------------------- */
+.navbar {
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  font-weight: bold;
+  color: #ffff !important;
+  background-color: #f44336 !important;
+  overflow: auto;
+  position: fixed;
+  padding: 8px 16px 8px 16px !important;
+  font-size: 18px !important;
+  text-align: left;
+  
+}
+
+.company_title {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 16px;
+}
+.company_title {
+  font-size: 24px;
+}
+
+.nav_menu {
+  list-style-type: none;
+  padding: 0px;
+}
+.nav_menu li {
+  padding: 8px 16px 8px 16px !important;
+  color: #fff;
+}
+.nav_menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav_menu li:hover {
+  background-color: #ffff !important;
+  color: #000 !important;
+}
+
+/* ---------------------------------- */
+/* **********NAVBAR CSS END ***********/
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* **********HEADER CSS END ***********/
+/* ---------------------------------- */
 .header {
   color: #fff;
   background-color: #f44336;
@@ -12,41 +62,74 @@ html body {
   width: 100%;
   position: fixed !important;
   z-index: 1 !important;
+  display: inline-block;
 }
-
-@media only screen and (min-width: 992px) {
-  .header {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .navigation {
-    display: none;
-  }
-
-  .table {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
-}
-
-.menu_icon {
+.menu_icon{
+ color: #fff;
+   text-decoration: none;
   padding: 8px 16px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;
+  margin-right: 16px;
+  
 }
+.menu_icon:hover{
+  color: #000;
+  background-color: #cccccc;
+}
+.close_menu{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px; 
+}
+.close_menu:hover{
+  color: #000;
+  background-color: #cccccc;
+}
+/* ---------------------------------- */
+/* **********HEADER CSS END ***********/
+/* ---------------------------------- */
 
 .table {
   margin-left: 350px;
   margin-right: 40px;
 }
 
-/*-------img bar------*/
+/* ----------------------------*/
+/* --- MAIN TITLE CSS START ---*/
+/* ----------------------------*/
+.title {
+  padding: 80px 16px 0px 8px;
+}
+
+/* આનું કહવાનું છે  */
+.title h1 {
+  font-size: 64px !important;
+  font-weight: bolder;
+  margin: 0px;
+}
+.title h2 {
+  color: #f44336 !important;
+  font-size: 48px !important;
+  margin: 0px;
+}
+
+.title hr {
+  width: 50px;
+  border: 5px solid red !important;
+  border-radius: 4px;
+  margin: 20px 0px;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+/* ----------------------------*/
+/* --- MAIN TITLE CSS END -----*/
+/* ----------------------------*/
+
+/* ===================================================== */
+
+/* ************************** */
+/*----   IMAGE CSS START -----*/
+/* ************************** */
 .img {
   padding: 0px 8px !important;
 }
@@ -68,76 +151,15 @@ html body {
   opacity: 0.8;
   cursor: pointer;
 }
-/*------img bar over----*/
+/* ************************** */
+/*----   IMAGE CSS END -------*/
+/* ****************************/
 
-.row {
-  display: flex;
-  flex-direction: column !important;
-}
+/* =================================================== */
 
-/* navigation bar */  
-.navigation {
-  top: 0px;
-  width: 300px;
-  height: 100%;
-  font-weight: bold;
-  color: #ffff !important;
-  background-color: #f44336 !important;
-  overflow: auto;
-  position: fixed;
-  padding: 8px 16px 8px 16px !important;
-  font-size: 18px !important;
-  text-align: left;
-}
-
-.company {
-  padding-top: 64px !important;
-  padding-bottom: 64px !important;
-  margin-left: 16px;
-}
-.navi {
-  list-style-type: none;
-  padding: 0px;
-}
-.navi li {
-  padding: 8px 16px 8px 16px !important;
-  color: #fff;
-}
-.navi li a {
-  text-decoration: none;
-  color: inherit;
-}
-.navi li:hover {
-  background-color: #ffff !important;
-  color: #000 !important;
-}
-
-/* navigation bar over*/
-/*------ header-----*/
-.main {
-  padding: 80px 16px 0px 16px;
-}
-
-.main h1 {
-  font-size: 64px !important;
-  font-weight: bolder;
-  margin: 0px;
-}
-.main1 {
-  color: #f44336 !important;
-  font-size: 48px !important;
-  margin: 0px;
-}
-.hr {
-  width: 50px;
-  border: 5px solid red !important;
-  border-radius: 4px;
-  margin: 20px 0px;
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-/*  ----- founder-----*/
+/* ---------------------------- */
+/*  ----- FOUNDER CSS START-----*/
+/* ---------------------------- */
 .founder {
   filter: grayscale(75%);
   padding: 0px 8px;
@@ -154,110 +176,214 @@ html body {
 .ceo1 {
   opacity: 0.6 !important;
 }
-/*----- founder -------*/
-/*-------packeges table------*/
-.table1 {
+/* ---------------------------- */
+/*  ----- FOUNDER CSS END-----*/
+/* ---------------------------- */
+
+/* ============================================================== */
+
+/* ****************************** */
+/*-----PACKEGE TABLE CSS START--------*/
+/* ****************************** */
+.basic_table,
+.pro_table {
   padding: 0px 8px;
   margin-bottom: 16px;
-  width: 460px;
+  /* આય width સતટિક આપી તી   */
 }
-.table1_chid {
+
+/* આનું  કહેવાનું છે  */
+.basic_table ul,
+.pro_table ul {
   background-color: #f1f1f1 !important;
   text-align: center;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
-.table1_chid li {
+
+.basic_table ul li,
+.pro_table ul li {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ddd;
 }
-.table1_main {
-  color: #fff;
+
+.basic_table ul li:first-child {
   background-color: #616161;
   padding-top: 32px !important;
   padding-bottom: 32px !important;
-
   font-size: 24px !important;
 }
-.room {
+
+.basic_table ul li:last-child {
+  border-bottom: none;
+}
+.pro_table ul li:first-child {
+  color: #fff;
+  background-color: #f44336;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  font-size: 24px !important;
+}
+.pro_table ul li:last-child{
+  border-bottom: none;
+}
+
+
+.basic_table ul li p,
+.pro_table ul li p {
   opacity: 0.6;
 }
-.button {
+
+.basic_table ul li button {
   border: none;
   padding: 12px 24px;
   font-size: inherit;
   cursor: pointer;
   background-color: #fff;
 }
-.button:hover {
+
+
+.basic_table ul li button:hover {
   background-color: #000;
   color: #fff;
 }
-.button1 {
+
+.pro_table ul li button {
   border: none;
   padding: 12px 24px;
   font-size: inherit;
   cursor: pointer;
   background-color: #f44336;
 }
-.button1:hover {
+.pro_table ul li button:hover {
   background-color: #000;
   color: #fff;
 }
-.table1_main1 {
-  color: #fff;
-  background-color: #f44336;
-  padding-top: 32px !important;
-  padding-bottom: 32px !important;
-  font-size: 24px !important;
-}
 
-@media only screen and (min-width: 600px) {
-  .row {
-    display: flex;
-    flex-direction: row !important;
-  }
-}
-/* -------contact-------*/
-.section{
+/* ****************************** */
+/*-----PACKEGE TABLE CSS END--------*/
+/* ****************************** */
+
+/* ------------------------------ 
+------ CONTACT CSS START -------
+------------------------------ */
+.section {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-.input{
+.input {
   border: 1px solid #ccc;
   padding: 8px;
   display: block;
   width: 100%;
 }
-.send{
+.send {
   color: #ffff;
-  background-color:#f44336;
+  background-color: #f44336;
   padding: 12px 24px;
   margin-bottom: 16px;
   width: 100%;
   border: none;
   cursor: pointer;
-  
 }
-.send:hover{
+.send:hover {
   color: #000;
-  background-color: #cfcfcf;
+  background-color: #c5c5c5;
 }
-/* -------contact over-----*/
-/*-------last-------*/
-.last{
+/* ------------------------------ */
+/*------ CONTACT CSS END -------*/
+/* ------------------------------ */
+
+/* ---------------------------- */
+/* -------FOOETR CSS START----- */
+/* ---------------------------- */
+.footer {
   margin-top: 75px;
   padding: 32px 58px 32px 16px;
   background-color: #f1f1f1 !important;
 }
-.last p{
-  float: right;
+.footer p {
+  text-align: end;
+}
+.footer a{
+  color: #000;
+}
+.footer a:hover {
+  color: #000;
+  opacity: 0.6;
+}
+/* ---------------------------- */
+/* -------FOOETR CSS END----- */
+/* ---------------------------- */
+
+/* ==================================================================== */
+
+/* ================================*/
+/* ========               =========*/
+/*--------| MEDIA QUERY |----------*/
+/* ========               =========*/
+/* ================================*/
+
+/* -----------------      HEADER    --------------------- */
+
+@media only screen and (min-width: 992px) {
+  .header {
+    display: none;
+  }
+  
 }
 
-.last1 a:hover{
-  color: #000;
-  opacity: 0.60;
+@media only screen and (max-width: 600px){
+  
 }
-/* ------last ovetr-----*/
+
+/* -----------------      NAVBAR    --------------------- */
+@media only screen and (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+
+  .table {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+ .close_menu {
+    display: none;
+  }
+}
+
+/*----------------   IMAGE START ---------------*/
+
+@media only screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .row img{
+    margin-top: 10px!important;
+  }
+}
+
+
+/*----------------   FOUNDER START ---------------*/
+@media only screen and (max-width: 600px) {
+  .card_row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+}
+
+/*----------------   PACKAGES TABLE START ---------------*/
+@media only screen and (max-width: 600px) {
+  .packages_row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
