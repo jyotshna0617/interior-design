@@ -18,6 +18,7 @@ body {
   padding: 8px 16px 8px 16px !important;
   font-size: 18px !important;
   text-align: left;
+  
 }
 
 .company_title {
@@ -61,6 +62,18 @@ body {
   width: 100%;
   position: fixed !important;
   z-index: 1 !important;
+  display: inline-block;
+}
+.menu_icon{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-right: 16px;
+  
+}
+.menu_icon:hover{
+  color: #000;
+  background-color: #cccccc;
 }
 /* ---------------------------------- */
 /* **********HEADER CSS END ***********/
@@ -194,6 +207,9 @@ body {
   font-size: 24px !important;
 }
 
+.basic_table ul li:last-child {
+  border-bottom: none;
+}
 .pro_table ul li:first-child {
   color: #fff;
   background-color: #f44336;
@@ -201,6 +217,10 @@ body {
   padding-bottom: 32px !important;
   font-size: 24px !important;
 }
+.pro_table ul li:last-child{
+  border-bottom: none;
+}
+
 
 .basic_table ul li p,
 .pro_table ul li p {
@@ -214,6 +234,7 @@ body {
   cursor: pointer;
   background-color: #fff;
 }
+
 
 .basic_table ul li button:hover {
   background-color: #000;
@@ -277,7 +298,9 @@ body {
 .footer p {
   text-align: end;
 }
-
+.footer a{
+  color: #000;
+}
 .footer a:hover {
   color: #000;
   opacity: 0.6;
@@ -300,6 +323,7 @@ body {
   .header {
     display: none;
   }
+  
 }
 
 /* -----------------      NAVBAR    --------------------- */
@@ -314,6 +338,11 @@ body {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .colse_menu{
+    display: none;
+  }
+}
 /*----------------   IMAGE START ---------------*/
 
 @media only screen and (max-width: 600px) {
@@ -321,12 +350,24 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .row img{
+    margin-top: 10px!important;
+  }
 }
 
 
 /*----------------   FOUNDER START ---------------*/
 @media only screen and (max-width: 600px) {
   .card_row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+}
+
+/*----------------   PACKAGES TABLE START ---------------*/
+@media only screen and (max-width: 600px) {
+  .packages_row {
     display: flex !important;
     flex-direction: column !important;
   }
