@@ -11,12 +11,14 @@
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
+            // document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("myOverlay").style.display = "block";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
+            //document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("myOverlay").style.display = "none";
         }
     </script>
     <div id="mySidenav" class="sidenav">
@@ -24,12 +26,12 @@
         <div class="small_nav">
             <h1>Company <br> Name</h1>
 
-            <a href="#" onclick="closenav()">Home</a>
-            <a href="#">Showcase</a>
-            <a href="#">Services</a>
-            <a href="#">Designers</a>
-            <a href="#">Packages</a>
-            <a href="#">Contact</a>
+            <a href="#Home">Home</a>
+            <a href="#Showcase">Showcase</a>
+            <a href="#Services">Services</a>
+            <a href="#Designers">Designers</a>
+            <a href="#Packages">Packages</a>
+            <a href="#Contact">Contact</a>
         </div>
     </div>
     <!-- Navbar -->
@@ -40,35 +42,37 @@
         </div>
         <div>
             <ul class="nav_menu">
-                <li> <a href="#"> home</a></li>
-                <li> <a href="#"> Showcase</a></li>
-                <li> <a href="#"> Services</a></li>
-                <li> <a href="#"> Designers</a></li>
-                <li> <a href="#"> Packages</a></li>
-                <li> <a href="#" onclick=""> Contact</a></li>
+                <li> <a href="# Home"> Home</a></li>
+                <li> <a href="#Showcase"> Showcase</a></li>
+                <li> <a href="#Services"> Services</a></li>
+                <li> <a href="#Designers"> Designers</a></li>
+                <li> <a href="#Packages"> Packages</a></li>
+                <li> <a href="#Contact"> Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="header" id="main">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span class="openNav" onclick="openNav()">&#9776;</span>
         <span>Company Name</span>
     </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="overlay" onclick="closeNav()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
     <div class="table">
         <table>
             <tbody>
                 <!-- MAIN TITLE -->
-                <tr>
+                <tr id="Home">
                     <td class="title">
                         <h1>interior designer</h1>
-                        <h2>showcase.</h2>
+                        <h2>Showcase.</h2>
                         <hr>
                     </td>
                 </tr>
                 <!-- IMAGES -->
-                <tr>
+                <tr id="Showcase">
                     <td>
                         <table>
                             <tr class="row">
@@ -91,7 +95,7 @@
                     </td>
                 </tr>
                 <!-- SERVICES -->
-                <tr>
+                <tr id="Services">
                     <td>
                         <div class="title">
                             <h2>services.</h2>
@@ -113,10 +117,10 @@
                     </td>
                 </tr>
                 <!-- DESIGNER -->
-                <tr>
+                <tr id="Designers">
                     <td>
                         <div class="title">
-                            <h2>designers.</h2>
+                            <h2>Designers.</h2>
                             <hr>
                             <p>The best team in the world.</p>
                             <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -175,10 +179,11 @@
                     </tr>
                 </table>
                 <!-- PACKAGES -->
+                <tr id="Packages">
                 <tr>
                     <td>
                         <div class="title">
-                            <h2>packages.</h2>
+                            <h2>Packages.</h2>
                             <hr>
                             <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt
@@ -233,11 +238,12 @@
                         </td>
                     </tr>
                 </table>
+                </tr>
                 <!-- CONTACT  -->
-                <tr>
+                <tr id="Contact">
                     <td>
                         <div class="title">
-                            <h2>contact.</h2>
+                            <h2>Contact.</h2>
                             <hr>
                             <p>Do you want us to style your home? Fill out the form and fill me in with the details :)
                                 We
