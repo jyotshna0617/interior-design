@@ -11,13 +11,12 @@
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "300px";
-            // document.getElementById("main").style.marginLeft = "250px";
             document.getElementById("myOverlay").style.display = "block";
+
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            //document.getElementById("main").style.marginLeft = "0";
             document.getElementById("myOverlay").style.display = "none";
         }
     </script>
@@ -26,13 +25,14 @@
         <div class="small_nav">
             <h1>Company <br> Name</h1>
 
-            <a href="#Home">Home</a>
-            <a href="#Showcase">Showcase</a>
-            <a href="#Services">Services</a>
-            <a href="#Designers">Designers</a>
-            <a href="#Packages">Packages</a> aya muku pa6i id to aapi nathi?
-            <a href="#Contact">Contact</a>
+            <a href="#Home" onclick="closeNav()">Home</a>
+            <a href="#Showcase" onclick="closeNav()">Showcase</a>
+            <a href="#Services" onclick="closeNav()">Services</a>
+            <a href="#Designers" onclick="closeNav()">Designers</a>
+            <a href="#Packages" onclick="closeNav()">Packages</a>
+            <a href="#Contact" onclick="closeNav()">Contact</a>
         </div>
+    </div>
     </div>
     <!-- Navbar -->
     <nav class="navbar">
@@ -42,11 +42,11 @@
         </div>
         <div>
             <ul class="nav_menu">
-                <li> <a href="# Home"> Home</a></li>
+                <li> <a href="#Home"> Home</a></li>
                 <li> <a href="#Showcase"> Showcase</a></li>
                 <li> <a href="#Services"> Services</a></li>
                 <li> <a href="#Designers"> Designers</a></li>
-                <li> <a href="#packages"> Packages</a></li>
+                <li> <a href="#Packages"> Packages</a></li>
                 <li> <a href="#Contact"> Contact</a></li>
             </ul>
         </div>
@@ -54,7 +54,7 @@
 
     <!-- Top menu on small screens -->
     <header class="header" id="main">
-        <span class="openNav" onclick="openNav()">&#9776;</span>
+        <a class="openNav" onclick="openNav()">&#9776;</a>
         <span>Company Name</span>
     </header>
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -179,9 +179,9 @@
                     </tr>
                 </table>
                 <!-- PACKAGES -->
-                <tr id="packages">
+                <tr>
                     <td>
-                        <div class="title">
+                        <div class="title" id="Packages">
                             <h2>Packages.</h2>
                             <hr>
                             <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
@@ -193,7 +193,7 @@
                     </td>
                 </tr>
                 <!-- PACKAGES TABLE -->
-                <table style="width: 100%;">
+                <table style=" width: 100%;">
                     <tr class="table_row">
                         <!-- BASIC TABLE -->
                         <td>
@@ -238,9 +238,9 @@
                     </tr>
                 </table>
                 <!-- CONTACT  -->
-                <tr id="Contact">
+                <tr>
                     <td>
-                        <div class="title">
+                        <div class="title" id="Contact">
                             <h2>Contact.</h2>
                             <hr>
                             <p>Do you want us to style your home? Fill out the form and fill me in with the details :)

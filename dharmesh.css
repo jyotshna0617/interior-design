@@ -83,6 +83,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
+    z-index: 1;
 }
 /* ---------------------------------- */
 /* **********OVERLAY CSS END ***********/
@@ -100,7 +101,7 @@ body {
   padding: 80px 16px 0px 8px;
 }
 
-/* આનું કહવાનું છે  */
+
 .title h1 {
   font-size: 64px !important;
   font-weight: bolder;
@@ -138,6 +139,7 @@ body {
   width: 100%;
   opacity: 0.8;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .col1_img img:nth-child(2) {
@@ -150,6 +152,7 @@ body {
   width: 100%;
   opacity: 0.8;
   cursor: pointer;
+  margin-top: 10px;
 }
 /* ************************** */
 /*----   IMAGE CSS END -------*/
@@ -387,7 +390,7 @@ body {
   
 }
 .closebtn a:hover{
-  background-color: #c5c5c5;
+  background-color: #ccc !important;
 }
 
 .sidenav a  {
@@ -398,6 +401,7 @@ body {
   display: block;
   transition: 0.3s;
 }
+
 
 .sidenav .closebtn {
   position: absolute;
@@ -415,11 +419,12 @@ body {
   margin: 10px 0px;
   padding: 64px 24px;
 }
+
 #main {
   transition: margin-left 0.5s;
   padding: 16px;
 }
-.header span:hover{
+.header a:hover{
   background-color: #c5c5c5;
 }
 
@@ -437,3 +442,4 @@ body {
   display:none;
 }
  }
+
