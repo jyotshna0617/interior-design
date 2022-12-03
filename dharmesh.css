@@ -131,7 +131,7 @@ body {
 /*----   IMAGE CSS START -----*/
 /* ************************** */
 .img {
-  padding: 0px 8px !important;
+  padding: 0px 8px;
 }
 
 .col1_img img {
@@ -348,6 +348,7 @@ body {
 }
 .row img{
   padding-top: 10px;
+  
 }
 }
 
@@ -358,6 +359,15 @@ body {
     flex-direction: column !important;
   }
 }
+/* -----------------     TABLE START    --------------------- */
+@media only screen and (max-width: 600px){
+  .table_row{
+    display: flex;
+    flex-direction: column; 
+  }
+}
+
+
 /*--------------close menu-------------*/
 
 /************ Off Canvas ******** */
